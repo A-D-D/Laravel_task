@@ -13,3 +13,8 @@ Route::get('/FirstPage', function () {
 Route::get('/SecondPage', function () {
     return view('second_page');
 });
+
+Route::get('/DbTest', 'DbTest@dbTest1');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
